@@ -25,11 +25,13 @@ function App() {
   return (
     <div className="container">
       <div align="center">
-      <h1>Filter App</h1>
+      <h1 className="pt-3">Filter App</h1>
       <Product
         product={record}
         filterProduct={filterProduct}
       />
+
+
     </div>
     </div>
   )

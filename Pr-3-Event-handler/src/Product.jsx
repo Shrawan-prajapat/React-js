@@ -8,6 +8,7 @@ function Product({ product,filterProduct }) {
 
     return (
         <div className="mt-5 mx-auto">
+             <button onClick={ () => filterProduct("all") } className='btn btn-primary'>All</button>
             {
                 category.map((cat) => {
                     return (
@@ -16,14 +17,14 @@ function Product({ product,filterProduct }) {
                 })
             }
 
-            <button onClick={ () => filterProduct("all") } className='btn btn-primary'>All</button>
+           
 
             <div className="container">
                 <div className="row mt-5">
                     {
                         product.map((p) => {
                             return (
-                                <div key={p.id} className="col-lg-3 mb-4">
+                                <div key={p.id} className="col-lg-3 mb-3">
                                     <div className="card">
                                         <img src={p.img} style={{height:"200px",objectFit:"contain"}} className="card-img-top" alt="..." />
                                         <div className="card-body">
