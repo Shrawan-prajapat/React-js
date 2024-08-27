@@ -1,0 +1,29 @@
+body{
+   background-image: url('https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=10000');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.6);
+   
+    color: aliceblue;
+    
+  }
+  .form input{
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 1.1s;
+  }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

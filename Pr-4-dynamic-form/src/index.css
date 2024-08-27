@@ -1,0 +1,53 @@
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 90%;
+}
+
+button:disabled {
+  background-color: #6c757d;
+}
+
+button.remove {
+  background-color: #dc3545;
+}
+
+button.remove:hover {
+  background-color: #c82333;
+}
+.cancel{
+  background-color: red;
+}
+.right{
+  background-color: rgb(40, 40, 216);
+}
