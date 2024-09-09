@@ -14,7 +14,7 @@ function Navbar() {
           <div className="col-sm-2">
             <img src={logo} alt="Logo" />
           </div>
-          <div className="col-sm-6">
+          {/* <div className="col-sm-6"> */}
             <div className="input-group mb-4">
               <input
                 type="search"
