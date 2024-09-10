@@ -43,6 +43,7 @@
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    transition:all 0.3s;
   }
   
   .form-bg input[type="submit"]:hover {
@@ -53,8 +54,18 @@
     color: red;
     cursor: pointer;
   }
+  .form-bg .delete:hover .fa-trash{
+    color: white;
+  }
+  .form-bg .fa-edit{
+   color: green;
+    cursor: pointer;
+  }
+  .form-bg .edit:hover .fa-edit{
+    color: white;
+  }
   .bg-result {
-    background-color: #f7f9fb; 
+    background-color: rgba(226, 238, 222, 1); 
     padding: 15px;
     margin: 12px 0;
     border-radius: 10px;
@@ -108,7 +119,30 @@
     font-size: 18px; 
     transition: color 0.2s ease-in-out; 
   }
+ 
   
-  .bg-result button:hover i {
-    color: #ff0000; 
+  button.delete:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
   }
+  
+  button.delete:active {
+    background-color: #e60000;
+    transform: scale(0.95);
+  }
+  
+  button.edit:hover {
+    background-color: #45a049;  
+  
+  }
+  
+  button.edit:active {
+    background-color: #3e8e41;  
+    transform: scale(0.95);    
+  }
+  
+
+
+  
+ 
