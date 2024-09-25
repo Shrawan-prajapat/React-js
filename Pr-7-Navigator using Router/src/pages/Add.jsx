@@ -1,0 +1,77 @@
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+
+const Add = () => {
+  const [name, setName] = useState("");
+  const [desc, setDesc] = useState("");
+  const [record, setRecord] = useState(JSON.parse(localStorage.getItem("users")) || [])
+
+
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let obj = {
+      userid: Math.floor(Math.random() * 10000),
+      name: name,
+      desc: desc,
+     
+      status: "deactive"
+    }
+
+
+
+    let newfield = [...record, obj];
+    setRecord(newfield);
+    localStorage.setItem("users", JSON.stringify(newfield));
+    alert("user add");
+    setName("");
+    setDesc("");
+
+  }
+
+
+
+
+
+
+  return (
+    <div className='form' align="center">
+      <h2>Add User</h2>
+      <form onSubmit={handleSubmit}>
+        <table border={1}>
+          <tr>
+            <td>Name :- </td>
+            <td>
+              <input
+                type="text"
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Description :- </td>
+            <td>
+              <input
+                type="text"
+                onChange={(e) => setDesc(e.target.value)}
+                value={desc}
+              />
+            </td>
+          </tr>
+        
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <Link to={`/`}>view</Link>
+    </div>
+  );
+}
+
+export default Add

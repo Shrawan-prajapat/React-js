@@ -1,0 +1,36 @@
+.slider{
+    background-image: url('public/img/banner-2.jpeg')!important;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+
+.slider .done p{
+    margin-right: 5px;
+    font-size: 25px;
+    color: #64b496;
+    font-weight: bold;
+    border-bottom: 2px solid #64b496;
+}
+.slider .done h5{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "poppins";
+    padding-top: 10px;
+}
+
+.slider h1{
+    font-size: 55px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.slider p{
+    font-size: 18px;
+}
+
+.slider button{
+    background-color: rgba(0, 128, 0, 0.459);
+    color: white;
+}

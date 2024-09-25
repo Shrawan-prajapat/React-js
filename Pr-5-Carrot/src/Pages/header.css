@@ -1,0 +1,55 @@
+form input{
+    width: 400px;
+    height: 45px;
+    padding-left: 15px;
+    padding-right: 175px;
+    border: 1px solid #64b496;
+    border-radius: 5px;
+    outline: none;
+    border-radius: 0;
+
+}
+nav{
+    margin-bottom: 10px;
+}
+
+
+
+form select{
+    width: 120px;
+    border: 0;
+    top: 1px;
+    text-align: center;
+    right: 45px;
+    font-size: 15px;
+    border: 1px solid #64b496;
+    border-radius: 0;
+    border-left: none;
+    padding: 5px;
+}
+
+form button{
+    width: 60px!important;
+    background-color: #64b496;  
+    border-radius: 0!important;
+    font-size: 15px!important;
+}
+.logo{
+    margin-right: 20px;
+}
+.logo .logo-png span{
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.logo-png{
+    margin: 5px 10px;
+    padding: 5px 0;
+    font-family: "poppins";
+}
+
+.logo .logo-png h5{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0 0 0;
+}

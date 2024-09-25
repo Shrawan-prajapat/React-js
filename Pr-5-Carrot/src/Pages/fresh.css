@@ -1,0 +1,35 @@
+.fresh-img img{
+    width: 100%!important;
+    border-radius: 10px;
+}
+.fresh-img {
+    position: relative;
+}
+
+.fresh-content{
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    margin-top: 30px;
+}
+.fresh-content h5{
+    margin-bottom: 15px;
+    font-family: "poppins";
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #2b2b2d;
+}
+
+.fresh-content p span{
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #64b496;
+}
+
+.fresh-content p .first{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: #777;
+}

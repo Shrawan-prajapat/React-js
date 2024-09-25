@@ -1,0 +1,67 @@
+.product{
+    text-align: center;
+    font-family: "poppins";
+}
+
+.product h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.product p{
+    font-size: 14px;
+    color: #7a7a7a;
+    max-width: 600px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+
+body{
+    overflow-x: hidden!important;
+}
+
+.card .card-body h6{
+    color: hsl(0, 0%, 47%);
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card .card-body .opp{
+    font-size: 19px;
+    color: gold;
+    text-align: center;
+    margin: 5px 0;
+
+}
+
+.card .card-body p{
+    color: #2b2b2d;
+    margin: 20px 0;
+}
+
+.card .card-body a{
+    text-decoration: none;
+    color: #03492f;
+    text-align: center;
+    font-size: 22px;
+}
+.card img{
+    transition: all 0.5s;
+}
+.card{
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.card img:hover{
+    transform: scale(1.2);
+}
+
+.card img{
+    padding: 10px;
+}
+
+
+
