@@ -84,9 +84,8 @@ const Add = () => {
         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
           <li className="nav-item">
           
-            <Link  className="btn btn-outline-light me-2">
-              Home
-            </Link>
+            <Link to={`/`}  className="btn btn-outline-light me-2">
+View            </Link>
             <Link  className="btn btn-outline-light me-2">
               About
             </Link>
@@ -105,9 +104,9 @@ const Add = () => {
 
                     <div className="form " onSubmit={handleSubmit}>
                         <form>
-                        <div className="mb-4 p-2 d-flex rounded bg-secondary-  border-bottom  justify-content-between align-items-center shadow-sm  bg-body-tertiary rounded">
+                        <div className="mb-4 p-2 d-flex rounded bg-secondary- h4  border-bottom  justify-content-center align-items-center shadow-sm  bg-body-tertiary rounded">
                                <label htmlFor="">Add User</label>
-                               <button className="btn btn-primary"><Link to={`/`} className='link'>View</Link></button>
+                             
                             </div>
                             <div className="mb-3 bg-dar">
                                 <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
