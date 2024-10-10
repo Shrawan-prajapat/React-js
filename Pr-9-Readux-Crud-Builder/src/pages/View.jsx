@@ -1,51 +1,37 @@
 import { useDispatch, useSelector } from "react-redux";
-
 import { DeleteUser } from "../action/crudAction";
+import "./add.css"
 
 const View = () => {
+  const users = useSelector((state) => state.crud.users);
+  const dispatch = useDispatch();
 
-    const users = useSelector(state => state.crud.users);
-    const dispatch = useDispatch();
+  const deleteUser = (id) => {
+    dispatch(DeleteUser(id));
+    alert("Record deleted");
+  };
 
-    const deleteUser = (id) => {
-        dispatch(DeleteUser(id));
-        alert("record delete");
-    }
+  return (
+    <div align="center">
+      <div className="users-container">
+        {users.map((u, i) => {
+          return (
+            <div className="box" key={u.id}>
+              <div className="user-info">
+                <p className="user-name">{u.name}</p>
+                <p className="user-phone">{u.phone}</p>
+              </div>
+              <div className="user-actions">
+                <button className="delete-btn" onClick={() => deleteUser(u.id)}>
+                  <i className="fa-solid fa-trash"></i> 
+                </button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
 
-
-    return (
-        <div align="center">
-          
-            <table>
-               
-                <tbody>
-                    {
-                        users.map((u, i) => {
-                            return (
-                              <div className="d-flex">
-                                 <div className="box">
-                                 <tr key={++i}>
-                                   
-                                   <td>{u.name}</td>
-                                   
-                               
-                               </tr>
-                               <tr>
-                               <td>{u.phone}</td>
-                               </tr>
-                               <tr><td>
-                               <button onClick={() => deleteUser(u.id)}><i class="fa-solid fa-trash"></i></button> &nbsp;
-                          
-                           </td></tr>
-                               </div>
-                              </div>
-                            )
-                        })
-                    }
-                </tbody>
-            </table>
-            
-        </div>
-    )
-}
 export default View;

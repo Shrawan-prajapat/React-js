@@ -1,0 +1,66 @@
+/* Container for all users */
+.users-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+    margin: 30px 0;
+  }
+  
+  /* Card-like box for each user */
+  .box {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px, rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
+  }
+  
+  /* Box hover effects */
+  .box:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px, rgba(0, 0, 0, 0.2) 0px 4px 8px;
+    transform: translateY(-5px);
+  }
+  
+  /* User info text */
+  .user-info {
+    margin-bottom: 15px;
+  }
+  
+  .user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .user-phone {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Button to delete user */
+  .delete-btn {
+    
+    background-color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+  }
+  
+  /* Delete button hover effect */
+  .delete-btn:hover {
+
+  }
+  
+  /* Font awesome icon */
+  .fa-trash {
+    margin-right: 5px;
+    color: #ffa500;
+  }
+  
