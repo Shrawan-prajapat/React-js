@@ -12,7 +12,7 @@ const Todo = () => {
         method: 'GET',
       });
       const data = await response.json(); // Parse the response as JSON
-      setTodos(data.carts); // Set the carts data
+    //   setTodos(data.carts); // Set the carts data
     } catch (err) {
       console.log(err);
       setError('Failed to fetch data. Please try again.');
