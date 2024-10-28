@@ -1,0 +1,78 @@
+.task-container {
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 15px; /* Increased padding for better spacing */
+    border-radius: 5px;
+    max-width: 800px; /* Added max-width for better layout control */
+    margin: auto; /* Centering the container */
+    margin-top: 50px;
+}
+
+.task-title {
+    font-size: 1.5rem; /* Changed to rem for better scalability */
+    font-weight: bold;
+    color: #ff9900;
+    margin-bottom: 10px; /* Spacing below title */
+}
+
+.task-description {
+    font-size: 1rem; /* Changed to rem for better scalability */
+    margin: 5px 0; /* Added vertical spacing */
+}
+
+.task-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px; /* Increased gap for better spacing */
+    margin-bottom: 15px; /* Spacing below button group */
+}
+
+.button {
+    padding: 8px 12px; /* Increased padding for better touch targets */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+.button-complete {
+    background-color: #76d793;
+    color: #fff;
+}
+
+.button-complete:hover {
+    background-color: #68c983; /* Slightly darker on hover */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+.button-delete {
+    background-color: #d77681;
+    color: #fff;
+}
+
+.button-delete:hover {
+    background-color: #c75e68; /* Slightly darker on hover */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Optional: Add focus styles for accessibility */
+.button:focus {
+    outline: 2px solid #ff9900; /* Outline for keyboard navigation */
+}
+
+.task-table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Remove gaps between table cells */
+}
+
+.task-table th, .task-table td {
+    padding: 10px; /* Consistent padding for table cells */
+    text-align: left; /* Align text to the left for readability */
+}
+
+.task-table th {
+    background-color: #444; /* Darker background for headers */
+}
+
+.task-table tr:hover {
+    background-color: #444; /* Highlight row on hover */
+}
